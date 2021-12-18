@@ -25,8 +25,8 @@ import { toGatewayURL } from './gateway.js'
 import { BlockstoreCarReader } from './bs-car-reader.js'
 
 const MAX_STORE_RETRIES = 5
-const MAX_CONCURRENT_UPLOADS = 3
-const MAX_CHUNK_SIZE = 1024 * 1024 * 10 // chunk to ~10MB CARs
+const MAX_CONCURRENT_UPLOADS = 5
+const MAX_CHUNK_SIZE = 1024 * 1024 * 30 // chunk to ~30MB CARs
 
 /**
  * @typedef {import('./lib/interface.js').Service} Service

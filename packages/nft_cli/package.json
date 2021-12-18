@@ -1,0 +1,35 @@
+{
+  "name": "@mehulagg/nft_cli",
+  "version": "0.0.2",
+  "description": "The CLI to save your things in nft.storage ⁂",
+  "type": "module",
+  "bin": {
+    "nft": "bin.js"
+  },
+  "scripts": {
+    "start": "./bin.js",
+    "test": "mocha test/*.spec.js --ignore test/e2e.spec.js --exit",
+    "test:e2e": "mocha test/e2e.spec.js --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://nft.storage",
+  "dependencies": {
+    "@ipld/car": "^3.1.16",
+    "@mehulagg/nft.storage": "^1.0.0",
+    "conf": "^10.0.1",
+    "enquirer": "^2.3.6",
+    "hard-rejection": "^2.1.0",
+    "ipfs-car": "^0.5.8",
+    "ora": "^5.4.1",
+    "sade": "^1.7.4"
+  },
+  "devDependencies": {
+    "execa": "^5.1.1",
+    "mocha": "^8.3.2"
+  },
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  }
+}
